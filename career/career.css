@@ -1,0 +1,154 @@
+/* Tetapan Asas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    max-width: 500px; /* Saiz seperti skrin telefon dalam gambar */
+    margin: 0 auto;
+    border: 5px solid #8a2be2; /* Garis ungu seperti dalam gambar */
+    position: relative;
+}
+
+/* Bahagian Atas */
+.top-section {
+    position: relative;
+    height: 250px;
+    background-image: url('img/gmbr UM prof.jpg'); /* Pastikan gambar background ada dalam folder img */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    color: #ffde00; /* Tukar jadi kuning bila hover */
+}
+
+/* --- TAMBAHAN KOD UNTUK BUTANG HOMEPAGE --- */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute; /* Supaya duduk di penjuru kiri atas */
+    top: 15px;
+    left: 15px;
+}
+
+.btn-homepage {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 12px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; /* Font lebih bersih untuk butang */
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-homepage:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+/* ----------------------------------------- */
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+}
+
+.profile-img {
+    height: 180px;
+}
+
+.title {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+/* Bahagian Grid Tengah */
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 500px; /* Ditingkatkan sedikit supaya lebih mirip gambar asal */
+    position: relative;
+}
+
+.grid-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* --- GAMBAR LATAR BELAKANG UNTUK 4 KOTAK --- */
+.bg-1 { background-image: url('img/fh1.career.jpg'); } /* Kiri Atas */
+.bg-2 { background-image: url('img/fh2.career.jpg'); } /* Kanan Atas */
+.bg-3 { background-image: url('img/fh3.career.jpg'); } /* Kiri Bawah */
+.bg-4 { background-image: url('img/fh4.career.jpg'); } /* Kanan Bawah */
+
+/* Jadual Statistik di Tengah */
+.overlay-stats {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 10; /* Memastikan jadual berada di atas 4 gambar */
+}
+
+.overlay-stats img {
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+/* Bahagian Bawah (Kuning) */
+.footer-section {
+    background-color: #f1d345; /* Warna kuning seperti gambar */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 100px; /* Jarak antara dua logo */
+}
+
+.social-link img {
+    width: 60px; /* Saiz logo medsos */
+    height: 60px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.social-link img:hover {
+    transform: scale(1.1);
+}

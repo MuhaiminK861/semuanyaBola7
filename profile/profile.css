@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 5px solid #8a2be2;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header */
+.top-section {
+    position: relative;
+    height: 250px;
+    /* GABUNGAN: Letak gambar background atas di sini */
+    background-image: url('img/fh3.career.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.home-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.home-btn:hover {
+    color: #ffde00; /* Tukar kuning bila hover */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    height: 150px;
+    object-fit: contain;
+}
+
+.title {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* --- BAHAGIAN TENGAH (CODING BARU UNTUK GAMBAR BACKGROUND) --- */
+.info-section {
+    position: relative;
+    min-height: 450px; /* Saiz kotak tengah */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Letakkan gambar background tengah di sini */
+    background-image: url('img/gmbr backG Prof.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.personal-info-box {
+    background-color: rgba(0, 0, 0, 0.9); /* Hitam pekat sedikit lutsinar */
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #333;
+    z-index: 2;
+}
+
+.personal-info-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.info-content p {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.link-text {
+    color: #add8e6;
+    text-decoration: underline;
+}
+
+.position ul {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.team-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.team-logo {
+    width: 50px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.team-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Footer (Kotak Kuning) */
+.footer-section {
+    background-color: #f1d345;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 80px;
+}
+
+.social-link img {
+    width: 55px;
+    height: 55px;
+    transition: 0.3s;
+}
+
+.social-link img:hover {
+    transform: translateY(-5px);
+}
